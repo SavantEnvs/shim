@@ -1,0 +1,10 @@
+project: savantenvs/shim
+target: fuzz-sbat
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-sbat/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-sbat
+    libfuzzer: true
+    timeout: 5
+

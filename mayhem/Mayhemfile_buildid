@@ -1,0 +1,8 @@
+project: savantenvs/shim
+target: buildid
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/buildid/testsuite
+cmds:
+  - cmd: /mayhem/build-mayhem/buildid @@
+    timeout: 5

@@ -1,0 +1,3 @@
+shim,16.1,,UEFI shim
+shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+,,,,
